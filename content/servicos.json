@@ -1,5 +1,89 @@
 [
   {
+    "slug": "integracao-whatsapp",
+    "title": "Integração com WhatsApp Business",
+    "summary": "Leve conversas para o fluxo do seu negócio: notificações, captação de contatos e encaminhamento de solicitações por integrações configuradas para o seu cenário.",
+    "tags": [
+      "WhatsApp Business",
+      "Webhooks",
+      "APIs"
+    ],
+    "label": "Serviço sob consulta",
+    "image": "systems",
+    "highlights": [
+      "WhatsApp Business",
+      "Webhooks",
+      "APIs"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "servicos/integracao-whatsapp.html"
+  },
+  {
+    "slug": "crm-integracoes",
+    "title": "CRM e organização do relacionamento",
+    "summary": "Organize leads, etapas e acompanhamentos em um CRM conectado aos canais da equipe. Integrações ajudam a manter o histórico e evitar oportunidades esquecidas.",
+    "tags": [
+      "CRM",
+      "Leads",
+      "Integrações"
+    ],
+    "label": "Serviço sob consulta",
+    "image": "network",
+    "highlights": [
+      "CRM",
+      "Leads",
+      "Integrações"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "servicos/crm-integracoes.html"
+  },
+  {
+    "slug": "extensoes-vendedores",
+    "title": "Extensões para vendedores e marketplaces",
+    "summary": "Ferramentas de navegador para agilizar tarefas de catálogo e operação comercial, organizando informações e reduzindo ações repetitivas dentro de fluxos permitidos pela plataforma.",
+    "tags": [
+      "Extensões",
+      "E-commerce",
+      "Produtividade"
+    ],
+    "label": "Serviço sob consulta",
+    "image": "design",
+    "highlights": [
+      "Extensões",
+      "E-commerce",
+      "Produtividade"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "servicos/extensoes-vendedores.html"
+  },
+  {
+    "slug": "integracao-email",
+    "title": "Integração de e-mail e notificações",
+    "summary": "Automatize mensagens transacionais, alertas e confirmações com modelos consistentes, eventos rastreáveis e conexão aos serviços de e-mail já usados pela equipe.",
+    "tags": [
+      "E-mail",
+      "SMTP",
+      "Automação"
+    ],
+    "label": "Serviço sob consulta",
+    "image": "audio",
+    "highlights": [
+      "E-mail",
+      "SMTP",
+      "Automação"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "servicos/integracao-email.html"
+  },
+  {
     "slug": "automacao-integracoes",
     "title": "Automações e integrações sob medida",
     "summary": "Elimine etapas manuais conectando ferramentas, APIs e dados. Fluxos claros, alertas úteis e tratamento de falhas para sua operação ganhar ritmo sem perder controle.",
@@ -21,6 +105,29 @@
     "content_file": "servicos/automacao-integracoes.html"
   },
   {
+    "slug": "sites-sistemas",
+    "title": "Sites, sistemas e APIs que trabalham juntos",
+    "summary": "Criação e evolução de experiências web, sistemas e integrações, alinhando interface, regras de negócio e dados para entregar um fluxo consistente.",
+    "tags": [
+      "Web",
+      "TypeScript",
+      "Java",
+      "APIs"
+    ],
+    "label": "Serviço sob consulta",
+    "image": "design",
+    "highlights": [
+      "Web",
+      "TypeScript",
+      "Java",
+      "APIs"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "servicos/sites-sistemas.html"
+  },
+  {
     "slug": "software-baixo-nivel",
     "title": "Software de baixo nível com Rust",
     "summary": "Ferramentas de linha de comando, utilitários e protótipos próximos ao sistema, com foco em desempenho, segurança de memória e comportamento previsível.",
@@ -40,27 +147,6 @@
     "url": null,
     "repository": null,
     "content_file": "servicos/software-baixo-nivel.html"
-  },
-  {
-    "slug": "suporte-ti",
-    "title": "Suporte técnico que destrava o trabalho",
-    "summary": "Diagnóstico e orientação para problemas de software, sistemas, estações de trabalho e conectividade — com explicação simples e próximos passos práticos.",
-    "tags": [
-      "Suporte",
-      "Linux",
-      "Diagnóstico"
-    ],
-    "label": "Serviço sob consulta",
-    "image": "network",
-    "highlights": [
-      "Suporte",
-      "Linux",
-      "Diagnóstico"
-    ],
-    "demo": false,
-    "url": null,
-    "repository": null,
-    "content_file": "servicos/suporte-ti.html"
   },
   {
     "slug": "redes-esquematizacao",
@@ -105,110 +191,24 @@
     "content_file": "servicos/consultoria-tecnica.html"
   },
   {
-    "slug": "sites-sistemas",
-    "title": "Sites, sistemas e APIs que trabalham juntos",
-    "summary": "Criação e evolução de experiências web, sistemas e integrações, alinhando interface, regras de negócio e dados para entregar um fluxo consistente.",
+    "slug": "suporte-ti",
+    "title": "Suporte técnico que destrava o trabalho",
+    "summary": "Diagnóstico e orientação para problemas de software, sistemas, estações de trabalho e conectividade — com explicação simples e próximos passos práticos.",
     "tags": [
-      "Web",
-      "TypeScript",
-      "Java",
-      "APIs"
-    ],
-    "label": "Serviço sob consulta",
-    "image": "design",
-    "highlights": [
-      "Web",
-      "TypeScript",
-      "Java",
-      "APIs"
-    ],
-    "demo": false,
-    "url": null,
-    "repository": null,
-    "content_file": "servicos/sites-sistemas.html"
-  },
-  {
-    "slug": "integracao-whatsapp",
-    "title": "Integração com WhatsApp Business",
-    "summary": "Leve conversas para o fluxo do seu negócio: notificações, captação de contatos e encaminhamento de solicitações por integrações configuradas para o seu cenário.",
-    "tags": [
-      "WhatsApp Business",
-      "Webhooks",
-      "APIs"
-    ],
-    "label": "Serviço sob consulta",
-    "image": "systems",
-    "highlights": [
-      "WhatsApp Business",
-      "Webhooks",
-      "APIs"
-    ],
-    "demo": false,
-    "url": null,
-    "repository": null,
-    "content_file": "servicos/integracao-whatsapp.html"
-  },
-  {
-    "slug": "integracao-email",
-    "title": "Integração de e-mail e notificações",
-    "summary": "Automatize mensagens transacionais, alertas e confirmações com modelos consistentes, eventos rastreáveis e conexão aos serviços de e-mail já usados pela equipe.",
-    "tags": [
-      "E-mail",
-      "SMTP",
-      "Automação"
-    ],
-    "label": "Serviço sob consulta",
-    "image": "audio",
-    "highlights": [
-      "E-mail",
-      "SMTP",
-      "Automação"
-    ],
-    "demo": false,
-    "url": null,
-    "repository": null,
-    "content_file": "servicos/integracao-email.html"
-  },
-  {
-    "slug": "extensoes-vendedores",
-    "title": "Extensões para vendedores e marketplaces",
-    "summary": "Ferramentas de navegador para agilizar tarefas de catálogo e operação comercial, organizando informações e reduzindo ações repetitivas dentro de fluxos permitidos pela plataforma.",
-    "tags": [
-      "Extensões",
-      "E-commerce",
-      "Produtividade"
-    ],
-    "label": "Serviço sob consulta",
-    "image": "design",
-    "highlights": [
-      "Extensões",
-      "E-commerce",
-      "Produtividade"
-    ],
-    "demo": false,
-    "url": null,
-    "repository": null,
-    "content_file": "servicos/extensoes-vendedores.html"
-  },
-  {
-    "slug": "crm-integracoes",
-    "title": "CRM e organização do relacionamento",
-    "summary": "Organize leads, etapas e acompanhamentos em um CRM conectado aos canais da equipe. Integrações ajudam a manter o histórico e evitar oportunidades esquecidas.",
-    "tags": [
-      "CRM",
-      "Leads",
-      "Integrações"
+      "Suporte",
+      "Linux",
+      "Diagnóstico"
     ],
     "label": "Serviço sob consulta",
     "image": "network",
     "highlights": [
-      "CRM",
-      "Leads",
-      "Integrações"
+      "Suporte",
+      "Linux",
+      "Diagnóstico"
     ],
     "demo": false,
     "url": null,
     "repository": null,
-    "content_file": "servicos/crm-integracoes.html"
+    "content_file": "servicos/suporte-ti.html"
   }
 ]

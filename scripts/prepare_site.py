@@ -25,7 +25,6 @@ for route in routes:
     target.write_bytes(index.read_bytes())
 (output / "404.html").write_bytes(index.read_bytes())
 (output / ".nojekyll").write_text("")
-(output / "CNAME").write_text(urlparse(site).netloc + "\n")
 (output / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {site}/sitemap.xml\n")
 items = "\n".join(f"  <url><loc>{site}{route}</loc><lastmod>{now}</lastmod></url>" for route in routes)
 (output / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>\n')
