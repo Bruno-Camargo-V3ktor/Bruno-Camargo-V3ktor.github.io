@@ -1,0 +1,2 @@
+.contact-actions { display:flex; gap:22px; flex-wrap:wrap; margin-top:34px; align-items:center; }
+@media(max-width:600px) { .contact-actions { gap:18px; } .contact-actions .button { width:100%; } }

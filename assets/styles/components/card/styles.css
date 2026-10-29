@@ -1,0 +1,20 @@
+.content-card { min-width:0; display:flex; flex-direction:column; padding:16px 16px 25px; background:linear-gradient(145deg,#111216,#0b0c0f); border:1px solid #30343c; border-radius:12px; transition:transform .25s,border-color .25s,box-shadow .25s; animation:enter-soft .6s both; }
+.content-card:hover { transform:translateY(-5px); border-color:#6695df; box-shadow:0 14px 35px #0005; }
+.card-art { display:flex; aspect-ratio:12/7; height:auto; position:relative; align-items:center; justify-content:center; overflow:hidden; border:1px solid #3c5373; border-radius:8px; background:#11233e; }
+.card-art img { width:100%; height:100%; object-fit:cover; transition:transform .6s; }
+.card-art:hover img { transform:scale(1.045); }
+.card-monogram { display:flex; flex-direction:column; align-items:center; gap:18px; padding:30px; }
+.card-monogram span { font-family:var(--heading); font-size:32px; }
+.card-monogram small { font-size:11px; letter-spacing:2px; color:#c0c4ce; }
+.card-meta { display:flex; justify-content:space-between; gap:12px; color:#afc5e9; font-size:12px; margin:23px 6px 12px; text-transform:uppercase; letter-spacing:.06em; }
+.content-card h3 { margin:0 6px; font-size:25px; letter-spacing:-.035em; }
+.content-card p { color:#bbc7da; font-size:17px; margin:14px 6px 22px; line-height:1.65; }
+.content-card .tags { margin: auto 6px 0; padding-top:8px; }
+.content-card h3 a:hover { color:#8cb6ff; }
+.content-card>.text-link { margin-top:20px; }
+.content-card .demo-label { color:#c8d7f0; font-size:12px; padding:6px 9px; background:#1a1c21; border-radius:4px; margin:0 6px 13px; align-self:flex-start; }
+
+.card-art { border-color:#343a44; background:#101115; }
+.card-art img { filter:saturate(.5); transition:transform .6s,filter .6s; }
+.card-art:hover img { filter:saturate(.8); }
+.content-card:hover { border-color:#536889; box-shadow:0 16px 36px #0007,0 0 28px #386ed00a; }

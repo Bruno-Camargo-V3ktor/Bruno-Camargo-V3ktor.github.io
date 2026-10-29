@@ -1,0 +1,15 @@
+.contact-page { background:radial-gradient(ellipse at 80% 0,#16447e60,transparent 55%); }
+.contact-page h1 { margin:30px 0; }
+.contact-lead { font-size:22px; color:#c5d3e9; max-width:850px; }
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:70px; }
+.contact-grid article { padding:36px; background:#111216; border:1px solid #343941; border-radius:12px; }
+.contact-grid span { font-size:12px; letter-spacing:.13em; color:#aec8ef; }
+.contact-grid h2 { font-size:32px; margin:22px 0; }
+.contact-grid p,.contact-grid li { font-size:18px; color:#c5d3e8; line-height:1.8; }
+.contact-grid ol { padding-left:22px; }
+.contact-grid li { padding-bottom:12px; }
+.contact-grid a { display:block; font-size:17px; margin-top:20px; color:#a2c5ff; overflow-wrap:anywhere; }
+.contact-note { border-left:3px solid #629aff; padding:24px; margin-top:35px; color:#becfe7; line-height:1.8; font-size:18px; max-width:900px; }
+@media(max-width:700px) { .contact-grid { grid-template-columns:1fr; } .contact-grid article { padding:25px; } }
+
+.contact-page { background:radial-gradient(ellipse at 80% 0,#2461b51c,transparent 55%); }

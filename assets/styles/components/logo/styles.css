@@ -1,0 +1,6 @@
+.rose { width:40px; fill:var(--blue); overflow:visible; flex-shrink:0; }
+.rose-petal { transform-box:view-box; transform-origin:50px 50px; animation:bloom 1.4s cubic-bezier(.22,1,.36,1) both; }
+.petal-0 { animation-delay:.2s; }.petal-1 { animation-delay:.32s; }.petal-2 { animation-delay:.44s; }.petal-3 { animation-delay:.56s; }.petal-4 { animation-delay:.68s; }.petal-5 { animation-delay:.8s; }.petal-6 { animation-delay:.92s; }.petal-7 { animation-delay:1.04s; }
+.rose--large { width:100%; transform-origin:center; animation:rose-turn 2.5s cubic-bezier(.25,.65,.25,1) both; filter:drop-shadow(0 0 28px #2670ff66); }
+@keyframes bloom { from { transform:scaleY(0); } to { transform:scaleY(1); } }
+@keyframes rose-turn { from { transform:rotate(0deg); filter:drop-shadow(0 0 5px #2670ff33); } 60% { filter:drop-shadow(0 0 48px #2670ff88); } to { transform:rotate(360deg); filter:drop-shadow(0 0 28px #2670ff66); } }

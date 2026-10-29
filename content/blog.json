@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "rust-ownership-sem-misterio",
+    "title": "Ownership em Rust, sem mistério",
+    "summary": "Entenda como propriedade, empréstimo e escopo ajudam a construir programas seguros.",
+    "tags": [
+      "Rust",
+      "Ownership",
+      "Memória"
+    ],
+    "label": "Artigo técnico",
+    "image": "code",
+    "highlights": [
+      "Por Bruno Camargo",
+      "Rust",
+      "Ownership",
+      "Memória"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "blog/rust-ownership-sem-misterio.html"
+  },
+  {
+    "slug": "result-erros-rust",
+    "title": "Result: erros que fazem parte do contrato",
+    "summary": "Use o tipo Result para tornar falhas recuperáveis explícitas no desenho das funções.",
+    "tags": [
+      "Rust",
+      "Result",
+      "APIs"
+    ],
+    "label": "Artigo técnico",
+    "image": "systems",
+    "highlights": [
+      "Por Bruno Camargo",
+      "Rust",
+      "Result",
+      "APIs"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "blog/result-erros-rust.html"
+  },
+  {
+    "slug": "caminho-requisicao-web",
+    "title": "O caminho de uma requisição web",
+    "summary": "Uma visão por camadas do caminho entre a ação no navegador e a resposta de um serviço.",
+    "tags": [
+      "Redes",
+      "HTTP",
+      "Web"
+    ],
+    "label": "Artigo técnico",
+    "image": "network",
+    "highlights": [
+      "Por Bruno Camargo",
+      "Redes",
+      "HTTP",
+      "Web"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "blog/caminho-requisicao-web.html"
+  },
+  {
+    "slug": "automacao-com-criterio",
+    "title": "Automação começa antes do workflow",
+    "summary": "Antes de ligar serviços, esclareça o evento, os dados e o que deve acontecer quando algo falha.",
+    "tags": [
+      "Automação",
+      "APIs",
+      "Processos"
+    ],
+    "label": "Artigo técnico",
+    "image": "code",
+    "highlights": [
+      "Por Bruno Camargo",
+      "Automação",
+      "APIs",
+      "Processos"
+    ],
+    "demo": false,
+    "url": null,
+    "repository": null,
+    "content_file": "blog/automacao-com-criterio.html"
+  }
+]

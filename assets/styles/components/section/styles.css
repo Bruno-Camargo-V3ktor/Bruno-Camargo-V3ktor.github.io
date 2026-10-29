@@ -1,0 +1,4 @@
+.section-heading { margin-bottom:42px; display:flex; flex-direction:column; gap:16px; }
+.section-more { margin-top:25px; }
+.section:nth-of-type(even) { background-color:#0b0c0e; }
+.section:nth-of-type(odd) { background-color:#08090b; }

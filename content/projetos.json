@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "your-time",
+    "title": "Your Time",
+    "summary": "Aplicação TypeScript dedicada à organização do tempo e das atividades do dia.",
+    "tags": [
+      "TypeScript",
+      "Productivity",
+      "Web"
+    ],
+    "label": "Repositório público",
+    "url": "https://github.com/Bruno-Camargo-V3ktor/Your-Time",
+    "repository": "https://github.com/Bruno-Camargo-V3ktor/Your-Time",
+    "image": "learning",
+    "highlights": [
+      "TypeScript",
+      "Productivity",
+      "Web"
+    ],
+    "demo": false,
+    "content_file": "projetos/your-time.html"
+  },
+  {
+    "slug": "minimal-task-app",
+    "title": "MinimalTask App",
+    "summary": "Aplicação de gerenciamento de tarefas construída com TypeScript. Um projeto para organizar atividades e transformar uma lista de pendências em um fluxo claro.",
+    "tags": [
+      "TypeScript",
+      "Tasks",
+      "Frontend"
+    ],
+    "label": "Repositório público",
+    "url": "https://github.com/Bruno-Camargo-V3ktor/MinimalTask-App",
+    "repository": "https://github.com/Bruno-Camargo-V3ktor/MinimalTask-App",
+    "image": "design",
+    "highlights": [
+      "TypeScript",
+      "Tasks",
+      "Frontend"
+    ],
+    "demo": false,
+    "content_file": "projetos/minimal-task-app.html"
+  },
+  {
+    "slug": "library-system-cli",
+    "title": "Library System CLI",
+    "summary": "Sistema de biblioteca executado pela linha de comando, desenvolvido em Java.",
+    "tags": [
+      "Java",
+      "CLI",
+      "OOP"
+    ],
+    "label": "Repositório público",
+    "url": "https://github.com/Bruno-Camargo-V3ktor/Library-System-CLI",
+    "repository": "https://github.com/Bruno-Camargo-V3ktor/Library-System-CLI",
+    "image": "code",
+    "highlights": [
+      "Java",
+      "CLI",
+      "OOP"
+    ],
+    "demo": false,
+    "content_file": "projetos/library-system-cli.html"
+  },
+  {
+    "slug": "minimal-task-api",
+    "title": "MinimalTask API",
+    "summary": "API em Java para operações de gerenciamento de tarefas, separando a interface das regras e dos dados da aplicação.",
+    "tags": [
+      "Java",
+      "API",
+      "Backend"
+    ],
+    "label": "Repositório público",
+    "url": "https://github.com/Bruno-Camargo-V3ktor/MinimalTask-API",
+    "repository": "https://github.com/Bruno-Camargo-V3ktor/MinimalTask-API",
+    "image": "systems",
+    "highlights": [
+      "Java",
+      "API",
+      "Backend"
+    ],
+    "demo": false,
+    "content_file": "projetos/minimal-task-api.html"
+  },
+  {
+    "slug": "simple-manager-task-localstorage",
+    "title": "Simple Manager Task",
+    "summary": "Gerenciador de tarefas em JavaScript com persistência local no navegador.",
+    "tags": [
+      "JavaScript",
+      "LocalStorage",
+      "Frontend"
+    ],
+    "label": "Repositório público",
+    "url": "https://github.com/Bruno-Camargo-V3ktor/SimpleManagerTask-LocalStorage",
+    "repository": "https://github.com/Bruno-Camargo-V3ktor/SimpleManagerTask-LocalStorage",
+    "image": "code",
+    "highlights": [
+      "JavaScript",
+      "LocalStorage",
+      "Frontend"
+    ],
+    "demo": false,
+    "content_file": "projetos/simple-manager-task-localstorage.html"
+  },
+  {
+    "slug": "vacancy-management-api",
+    "title": "Vacancy Management API",
+    "summary": "API em Java para organizar dados e operações ligados à gestão de vagas.",
+    "tags": [
+      "Java",
+      "API",
+      "Backend"
+    ],
+    "label": "Repositório público",
+    "url": "https://github.com/Bruno-Camargo-V3ktor/VacancyManagement-API",
+    "repository": "https://github.com/Bruno-Camargo-V3ktor/VacancyManagement-API",
+    "image": "network",
+    "highlights": [
+      "Java",
+      "API",
+      "Backend"
+    ],
+    "demo": false,
+    "content_file": "projetos/vacancy-management-api.html"
+  }
+]

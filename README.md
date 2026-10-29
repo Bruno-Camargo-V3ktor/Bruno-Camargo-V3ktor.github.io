@@ -1,68 +1,55 @@
-<h1 align="left">Olá, meu nome é Bruno Camargo!<br>Desenvolvedor Fullstack</h1>
+# Blue Rose Studio
 
-###
+Site estático em Rust + Dioxus, com conteúdo autoral local em HTML e catálogos JSON. Sem backend ou painel administrativo.
 
-<img align="left" height="180" src="https://lh3.googleusercontent.com/a/ACg8ocJFKfnqSZ9dqpTJE711b8DQITpUpkTk1pwhhfkoGSWdEdUztQ=s315-c-no"  />
+## Rodar
 
-###
+```sh
+dx serve --platform web
+```
 
-<h3 align="left">Atualmente trabalhando na Albras Metalúrgica (TI)<br><br>- FrontEnd: JavaScript, TypeScript, React, React Native.<br>- BackEnd: Java, SpringBoot, MySQL, MongoDB.<br><br>Interesses futuros: Rust e Golang.</h3>
+## Editar conteúdo sem alterar Rust
 
-###
+Consulte [content/GUIA.md](content/GUIA.md). Cada item tem metadados no JSON de sua categoria e um arquivo `.html` indicado por `content_file`. O build descobre esses arquivos automaticamente.
 
-<br clear="both">
+Exemplo: edite `content/blog/caminho-de-um-pacote.html` para alterar o artigo. Para incluir uma imagem, coloque-a em `assets/media/` e use `<img src="media/arquivo.jpg" alt="Descrição">` com aspas duplas. A pasta de mídia é empacotada pelo Dioxus; não use caminhos do seu computador no HTML.
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=Bruno-Camargo-V3ktor&locale=pt-br&mode=daily&theme=dracula&hide_border=true&border_radius=5" height="160" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api?username=Bruno-Camargo-V3ktor&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=pt-br&hide_border=true" height="160" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Bruno-Camargo-V3ktor&locale=pt-br&hide_title=false&layout=compact&card_width=320&langs_count=7&theme=dracula&hide_border=true&custom_title=Linguagens" height="160" alt="languages graph"  />
-</div>
+O HTML é autoral e confiável, sem sanitização para permitir formatação. Não cole scripts ou HTML desconhecido. Não há entrada HTML pública. Mudanças exigem recompilar e publicar o site.
 
-###
+Os projetos apontam para repositórios públicos do GitHub. Textos de blog são artigos editoriais autorais; descrições de projetos e serviços não afirmam métricas ou clientes que não foram fornecidos. Capas são ilustrações conceituais, não capturas dos produtos.
 
-<br clear="both">
+## Publicar
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="30" alt="spring logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="nodejs logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-</div>
+O branch `source` contém o projeto Rust e o conteúdo editorial. Ao receber uma atualização, o workflow `.github/workflows/deploy.yml` compila o site e substitui o branch `main` pelos arquivos renderizados. No repositório, configure GitHub Pages para publicar a partir de `main` na raiz (`/(root)`). O workflow também gera `robots.txt`, `sitemap.xml`, rotas de página e `404.html`.
 
-###
+## Verificar e gerar
 
-<div align="center">
-  <a href="https://www.youtube.com/@v3ktor__" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="youtube logo"  />
-  </a>
-  <a href="https://www.instagram.com/brunoo_ferreirasz/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-  </a>
-  <a href="mailto:v3ktoryt@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
-  </a>
-  <a href="https://br.linkedin.com/in/bruno-camargo-ferreira-b014452aa" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-  </a>
-</div>
+```sh
+python3 scripts/validate_content.py
+cargo fmt --check
+cargo check
+dx build --platform web --release
+```
 
-###
+Publique a pasta `target/dx/blue-rose-studio/release/web/public` (ou o equivalente em `CARGO_TARGET_DIR`). Configure fallback das rotas para `index.html`, preservando arquivos reais, para permitir recarregar páginas internas.
 
-<br clear="both">
+## Estrutura
 
-<img src="https://raw.githubusercontent.com/Bruno-Camargo-V3ktor/Bruno-Camargo-V3ktor/output/snake.svg" alt="Snake animation" />
+- `content/`: catálogos, HTML e mídia editorial.
+- `build.rs`: agrega HTML e registra mídia local durante o build.
+- `src/data/`: modelo e acesso ao conteúdo compilado.
+- `src/pages/` e `src/components/`: módulos com CSS próprio; máximo de 100 linhas por componente.
+- `assets/styles/global.css`: reset e variáveis globais.
+- `assets/styles/`: CSS modular de componentes e páginas.
+- `assets/`: imagens, ícones, ilustrações, manifest e todos os estilos empacotados.
+- `assets/bruno.jpeg`: foto original; proporções e efeitos definidos no CSS.
+- `assets/brand/`: favicon SVG, ícones PNG e manifest. O manifest usa ícones embutidos para sobreviver ao hashing dos assets; não inclui service worker/offline.
 
-###
+## Identidade e contato
+
+Base preta, texto claro, bordas neutras e iluminação azul. A rosa do hero completa uma rotação durante o surgimento das pétalas; animações respeitam `prefers-reduced-motion`.
+
+E-mail: `contato@bluerosestudio.com.br` (verificar alias no provedor).
+WhatsApp: `https://wa.me/5511996489713`. O botão abre uma conversa com mensagem inicial preenchida.
+
+Sobre e contato estão em `src/pages/about` e `src/pages/contact`. Termos e privacidade são textos iniciais em `src/pages/info`, a revisar conforme a operação e a hospedagem adotadas. As fontes usam a pilha local do sistema; o site não precisa buscar arquivos externos para renderizar sua tipografia.

@@ -1,0 +1,8 @@
+.info { min-height:70vh; }
+.info h1 { max-width:1000px; margin:25px 0 45px; }
+.info>p:not(.eyebrow) { max-width:750px; margin:24px 0; color:#aab0bd; font-size:18px; }
+.info .button { margin-top:20px; }
+
+
+.info { background:radial-gradient(ellipse at 90% 0,#193e6840,transparent 50%); }
+.info>p:not(.eyebrow) { font-size:20px; color:#c7d3e5; padding:24px; border-left:2px solid #537bb4; background:#101115; border-radius:0 8px 8px 0; }

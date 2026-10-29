@@ -1,0 +1,8 @@
+.footer { padding:26px var(--space); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:18px 30px; border-top:1px solid #2b2e34; background:#08090b; }
+.footer-signature { display:flex; align-items:center; gap:10px; font-size:18px; letter-spacing:-.5px; }
+.footer-signature .rose { width:25px; }
+.footer p { display:none; }
+.footer nav { display:flex; flex-wrap:wrap; gap:12px 24px; font-size:14px; color:#bec3cd; }
+.footer a:hover { color:#84adff; }
+.footer small { font-size:12px; color:#969eac; }
+@media(max-width:650px) { .footer { gap:20px; } .footer nav { width:100%; gap:12px 18px; } }

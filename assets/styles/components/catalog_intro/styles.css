@@ -1,0 +1,10 @@
+.catalog-intro { display:grid; grid-template-columns:1.2fr 1fr; gap:65px; align-items:center; margin-bottom:60px; }
+.catalog-intro h1 { margin:18px 0 26px; }
+.catalog-intro h2 { font-size:clamp(26px,2.8vw,38px); max-width:650px; }
+.catalog-intro p:not(.eyebrow) { font-size:19px; color:#bdcadd; margin-top:22px; max-width:650px; }
+.catalog-intro-art { border:1px solid #3d5579; border-radius:16px; overflow:hidden; transform:rotate(2deg); box-shadow:0 25px 70px #10326b30; animation:enter-soft .8s both; }
+.catalog-intro-art img { display:block; width:100%; height:auto; }
+@media(max-width:850px) { .catalog-intro { grid-template-columns:1fr; gap:32px; } .catalog-intro-art { max-width:650px; transform:none; } }
+
+.catalog-intro-art { border-color:#353a43; transform:none; box-shadow:0 20px 65px #0008; }
+.catalog-intro-art img { filter:saturate(.5); }

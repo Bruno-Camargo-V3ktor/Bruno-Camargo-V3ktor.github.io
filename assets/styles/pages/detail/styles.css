@@ -1,0 +1,23 @@
+.detail { min-height:75vh; position:relative; isolation:isolate; background:transparent; }
+.detail::before { content:""; position:absolute; z-index:-1; left:50%; top:0; transform:translateX(-50%); width:100vw; height:850px; background:radial-gradient(ellipse at 72% 8%,#2566dc30,transparent 58%); pointer-events:none; }
+.detail-header { max-width:1000px; margin:50px 0 38px; animation:enter-soft .7s both; }
+.detail h1 { margin:22px 0; font-size:clamp(40px,5.8vw,80px); }
+.detail-lead { font-size:clamp(21px,2.2vw,28px); color:#c0cfe4; margin-bottom:26px; max-width:850px; }
+.detail-image { margin:0 0 60px; }
+.detail-image img { width:100%; max-height:520px; object-fit:cover; border:1px solid #343941; border-radius:12px; display:block; }
+.detail-image figcaption { color:#aebfd8; font-size:13px; padding-top:12px; }
+.detail-links { display:flex; gap:20px; flex-wrap:wrap; color:#bccde6; }
+.detail-cta { margin-top:65px; padding:45px; border:1px solid #49658c; border-radius:12px; background:radial-gradient(ellipse at 100% 0,#2958a51f,transparent 65%),#0d0e11; }
+.detail-cta h2 { margin:15px 0; }
+.detail-cta p:not(.eyebrow) { font-size:18px; color:#c5d3e8; }
+@media(max-width:650px) { .detail-cta { padding:25px; } }
+
+.detail { background:transparent; }
+.detail-blog .detail-header { text-align:center; margin:60px auto 40px; }
+.detail-blog .detail-header .tags { justify-content:center; }
+.detail-blog .detail-lead { margin-inline:auto; }
+.detail-blog .detail-image img { max-height:380px; }
+.detail-cursos .detail-header { border-left:2px solid #5c8fe8; padding-left:28px; }
+.detail-cursos .detail-sidebar { border-top:2px solid #5c8fe8; }
+.detail-projetos .detail-image img { max-height:620px; }
+.detail-servicos .detail-image { max-width:850px; }

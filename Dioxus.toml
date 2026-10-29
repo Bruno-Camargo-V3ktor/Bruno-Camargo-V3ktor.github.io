@@ -1,0 +1,5 @@
+[application]
+name = "Blue Rose Studio"
+default_platform = "web"
+[web.app]
+title = "Blue Rose Studio — Código, forma e propósito"

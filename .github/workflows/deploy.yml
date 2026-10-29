@@ -1,0 +1,34 @@
+name: Build and publish Blue Rose Studio
+on:
+  push:
+    branches: [source]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - name: Install Dioxus CLI
+        run: cargo install dioxus-cli --version 0.7.9 --locked
+      - name: Build static web bundle
+        run: dx build --platform web --release
+      - name: Prepare search index and clean URLs
+        env:
+          SITE_URL: https://bluerosestudio.com.br
+          SITE_OUTPUT: target/dx/blue-rose-studio/release/web/public
+        run: python3 scripts/prepare_site.py
+      - name: Publish rendered site to main
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: target/dx/blue-rose-studio/release/web/public
+          publish_branch: main
+          force_orphan: true

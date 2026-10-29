@@ -1,0 +1,5 @@
+.brand { display:inline-flex; align-items:center; gap:14px; flex-shrink:0; color:var(--text); }
+.brand .rose { width:45px; }
+.brand-wordmark { display:flex; flex-direction:column; font-family:var(--heading); font-size:25px; line-height:1.12; letter-spacing:-.7px; font-weight:700; }
+.brand-studio { display:flex; justify-content:space-between; width:100%; margin-top:7px; font-family:inherit; font-size:11px; line-height:1; letter-spacing:0; font-weight:500; color:#c5c8ce; }
+@media(max-width:1000px) { .brand-wordmark { font-size:22px; } }

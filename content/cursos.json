@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "rust-essencial",
+    "title": "Rust Essencial: do zero ao código",
+    "summary": "Uma trilha direta para quem já programa e quer começar a construir com Rust.",
+    "tags": [
+      "Rust",
+      "Ownership",
+      "Prática"
+    ],
+    "label": "Trilha intensiva",
+    "image": "code",
+    "demo": false,
+    "url": "https://www.youtube.com/@v3ktor__",
+    "repository": null,
+    "highlights": [
+      "Para quem já programa",
+      "Fundamentos aplicados",
+      "Exercícios guiados"
+    ],
+    "content_file": "cursos/rust-essencial.html"
+  }
+]

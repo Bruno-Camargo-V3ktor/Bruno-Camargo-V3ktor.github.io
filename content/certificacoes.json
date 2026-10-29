@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Ciência da Computação",
+    "area": "FORMAÇÃO SUPERIOR",
+    "skills": "Bacharelado · fundamentos de computação, software e sistemas",
+    "type": "Bacharelado",
+    "issuer": "Universidade São Judas Tadeu",
+    "status": "Em andamento",
+    "issued_at": null,
+    "hours": null,
+    "credential_id": null,
+    "url": null
+  },
+  {
+    "title": "Cibersegurança",
+    "area": "FORMAÇÃO SUPERIOR",
+    "skills": "Tecnólogo · segurança da informação e proteção de sistemas",
+    "type": "Tecnólogo",
+    "issuer": "Faculdade Impacta",
+    "status": "Em andamento",
+    "issued_at": null,
+    "hours": null,
+    "credential_id": null,
+    "url": null
+  }
+]
