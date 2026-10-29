@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bluerosestudio.com.br/sitemap.xml
