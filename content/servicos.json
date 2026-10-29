@@ -21,25 +21,25 @@
     "content_file": "servicos/integracao-whatsapp.html"
   },
   {
-    "slug": "crm-integracoes",
-    "title": "CRM e organização do relacionamento",
-    "summary": "Organize leads, etapas e acompanhamentos em um CRM conectado aos canais da equipe. Integrações ajudam a manter o histórico e evitar oportunidades esquecidas.",
+    "slug": "integracao-email",
+    "title": "Integração de e-mail e notificações",
+    "summary": "Automatize mensagens transacionais, alertas e confirmações com modelos consistentes, eventos rastreáveis e conexão aos serviços de e-mail já usados pela equipe.",
     "tags": [
-      "CRM",
-      "Leads",
-      "Integrações"
+      "E-mail",
+      "SMTP",
+      "Automação"
     ],
     "label": "Serviço sob consulta",
-    "image": "network",
+    "image": "audio",
     "highlights": [
-      "CRM",
-      "Leads",
-      "Integrações"
+      "E-mail",
+      "SMTP",
+      "Automação"
     ],
     "demo": false,
     "url": null,
     "repository": null,
-    "content_file": "servicos/crm-integracoes.html"
+    "content_file": "servicos/integracao-email.html"
   },
   {
     "slug": "extensoes-vendedores",
@@ -63,25 +63,25 @@
     "content_file": "servicos/extensoes-vendedores.html"
   },
   {
-    "slug": "integracao-email",
-    "title": "Integração de e-mail e notificações",
-    "summary": "Automatize mensagens transacionais, alertas e confirmações com modelos consistentes, eventos rastreáveis e conexão aos serviços de e-mail já usados pela equipe.",
+    "slug": "crm-integracoes",
+    "title": "CRM e organização do relacionamento",
+    "summary": "Organize leads, etapas e acompanhamentos em um CRM conectado aos canais da equipe. Integrações ajudam a manter o histórico e evitar oportunidades esquecidas.",
     "tags": [
-      "E-mail",
-      "SMTP",
-      "Automação"
+      "CRM",
+      "Leads",
+      "Integrações"
     ],
     "label": "Serviço sob consulta",
-    "image": "audio",
+    "image": "network",
     "highlights": [
-      "E-mail",
-      "SMTP",
-      "Automação"
+      "CRM",
+      "Leads",
+      "Integrações"
     ],
     "demo": false,
     "url": null,
     "repository": null,
-    "content_file": "servicos/integracao-email.html"
+    "content_file": "servicos/crm-integracoes.html"
   },
   {
     "slug": "automacao-integracoes",
