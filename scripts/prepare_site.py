@@ -1,6 +1,7 @@
 """Prepare a Dioxus SPA bundle for static hosting and search crawlers."""
 import json
 import os
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -26,6 +27,9 @@ for route in routes:
 (output / "404.html").write_bytes(index.read_bytes())
 (output / ".nojekyll").write_text("")
 (output / "CNAME").write_text(urlparse(site).netloc + "\n")
+signature_assets = output / "email-signature"
+signature_assets.mkdir(exist_ok=True)
+shutil.copy2(root / "email-signature" / "rosa-animada.gif", signature_assets / "rosa-animada.gif")
 (output / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {site}/sitemap.xml\n")
 items = "\n".join(f"  <url><loc>{site}{route}</loc><lastmod>{now}</lastmod></url>" for route in routes)
 (output / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{items}\n</urlset>\n')
