@@ -1,7 +1,9 @@
 # Assinatura de e-mail — Blue Rose Studio
 
-- `assinatura.html`: assinatura em tabela com estilos inline para compatibilidade com Gmail, Outlook e outros clientes.
-- `rosa-animada.gif`: rosa azul animada; o primeiro quadro já mostra a marca completa para clientes que exibem apenas imagens estáticas.
-- `previa.png`: prévia visual da composição.
+- `assinatura.html`: assinatura em tabela com cor de fundo HTML e estilos inline para preservar o fundo escuro ao colar no e-mail.
+- `rosa-animada.gif`: animação sem extensão de repetição; executa uma vez e termina na rosa completa.
+- `previa.png`: prévia do layout.
 
-A assinatura usa a imagem hospedada em `https://bluerosestudio.com.br/email-signature/rosa-animada.gif`. O fluxo de publicação copia esse GIF para o site. Depois que o deploy terminar, abra `assinatura.html` no navegador, copie a assinatura renderizada e cole no editor de assinatura do seu e-mail. Se o cliente bloquear imagens externas, ele poderá mostrar o texto alternativo da logo; os dados de contato continuam clicáveis.
+A assinatura usa o e-mail `bruno.camargo@bluerosestudio.com.br`, o WhatsApp `+55 (11) 99648-9713` e o endereço do site na mesma linha de contatos. O GIF deve mostrar a animação uma vez; alguns clientes podem exibir apenas o quadro final.
+
+Abra `assinatura.html` no navegador, copie a tabela renderizada e cole nas configurações da assinatura. Se o editor remover o fundo ao colar, recrie a assinatura nesse editor com fundo escuro; alguns clientes impõem o fundo do próprio tema.
